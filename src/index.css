@@ -1,6 +1,114 @@
-* {
-  font-family: Arial, sans-serif;
-  color: #222;
+:root {
+  --max-width: 1100px;
+  --accent: #ff6600;
+}
+
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #f6f8fb;
+  color: #111
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column
+}
+
+header,
+footer {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.06)
+}
+
+main {
+  flex: 1
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px
+}
+
+.hero {
+  padding: 40px 0;
+}
+
+.color {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #007bff33;
+  top: 5px;
+  left: 10px;
+}
+
+.box {
+  display: inline-block;
+  flex-direction: column;
+  background: #f9fafb;
+  padding: 25px;
+  border-radius: 15px;
+  width: 150px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 5px;
+  margin-top: -60px;
+}
+
+.svg-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.04);
+}
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #007bff33;
+    top: 5px;
+    left: 10px;
+}
+
+.form-row {
+  margin-bottom: 12px;
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer
+}
+
+input {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid #ddd
 }
